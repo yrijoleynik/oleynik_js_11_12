@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.3.0/lodash.js"></script>
+    <script src="js/script_template.js"></script>
+    <script src="js/carusel.js"></script>
+    <script src="js/script.js"></script>
+    <title>Yurij Oleynik js_5</title>
+</head>
+
+<body>
+    <div class="wrapper_carusel" id="for_plugin">
+       <div class="carusel_left"><p>left</p></div>
+        <div class="carusel_block">
+            <ul class="carusel">
+                <li class="carusel_elem">
+                    <img src="image/img1.jpg" alt="image1">
+                    <p>image 1</p>
+                </li>
+                <li class="carusel_elem">
+                    <img src="image/img2.jpg" alt="image2">
+                    <p>image 2</p>
+                </li>
+                <li class="carusel_elem">
+                    <img src="image/img3.jpg" alt="image3">
+                    <p>image 3</p>
+                </li>
+                <li class="carusel_elem">
+                    <img src="image/img4.jpg" alt="image4">
+                    <p>image 4</p>
+                </li>
+                <li class="carusel_elem">
+                    <img src="image/img5.jpg" alt="image5">
+                    <p>image 5</p>
+                </li>
+                <li class="carusel_elem">
+                    <img src="image/img6.jpg" alt="image6">
+                    <p>image 6</p>
+                </li>
+                <li class="carusel_elem">
+                    <img src="image/img7.jpg" alt="image7">
+                    <p>image 7</p>
+                </li>
+            </ul>
+        </div>
+        <div class="carusel_right"><p>right</p></div>
+        <div class="clearfix"></div>
+    </div>
+
+    <div id="person"></div>
+
+    <script type="text/html" id="page_about">
+      <div class="wrapper">
+        <div class="header">
+          <h1><%=name%></h1>
+          <p><img src="<%=img%>" alt="Это я "></p>
+          <span>Cтудент курса <%=group%>GoIT</span>
+        </div>
+        <hr>
+        <div class="content">
+          <h3>Хочу учить фронтенд, потому что:</h3>
+          <ul>
+            <% for (var i = 0; i < question.length; i++ ) { %>
+              <li>
+                <%=question[i]%>
+              </li>
+              <% } %>
+
+            </ul>
+
+        </div>
+        <hr>
+        <div class="contacts">
+          <h3>Мой контактный телефон:</h3>
+          <span><%=tel%></span>
+          <h3>Мой профиль Фэйсбук:</h3>
+          <a href="<%=fb%>">Мой профиль в facebook</a>
+        </div>
+        <hr>
+        <div class="testimonial">
+          <h3>Мой фидбек:</h3>
+          <span><%=fidb%></span>
+        </div>
+      </div>
+    </script>
+
+    <!-- Шаблонизатор LODASH -->
+    <!-- <script src="js/lodash.js"></script> -->
+</body>
+
+</html>

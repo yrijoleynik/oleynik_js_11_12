@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F5FFFA;
+}
+
+.clearfix {
+    clear: both;
+    display: block;
+}
+
+.wrapper_carusel {
+    margin: 50px auto;
+    width: 810px;
+}
+
+.carusel_block {
+    width: 635px;
+    overflow: hidden;
+    float: left;
+}
+
+.carusel {
+    list-style: none;
+    width: 10000px;
+    position: relative;
+}
+
+.carusel_elem {
+    display: block;
+    float: left;
+    margin-right: 20px;
+}
+
+p {
+    text-align: center;
+}
+
+.carusel_left, .carusel_right {
+    float: left;
+    padding: 5px 8px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: #87CEEB;
+    margin-top: 130px;
+    width: 35px;
+}
+
+.carusel_left:hover, .carusel_right:hover {
+    background-color: #1E90FF;
+    cursor: pointer;
+}
+
+.carusel_left {
+    margin-right: 30px;
+}
+
+.carusel_right {
+    margin-left: 30px;
+}
+
+
+/*Стили для шаблона*/
+
+.wrapper {
+    width: 1024px;
+    height: 1024px;
+    margin: 0 auto;
+}
+
+h3 {
+    font-size: 18px;
+    color: #1f1f1f;
+    font-weight: bold;
+    margin-left: 262px;
+}
+
+hr {
+    border-bottom: 1px #c4c7c4 solid;
+    width: 500px;
+    margin-left: 262px;
+    margin-bottom: 23px;
+}
+
+.header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-left: 270px;
+}
+
+.header p {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.header img {
+    width: 200px;
+    height: 200px;
+    border: 1px #8f8f8f solid;
+}
+
+.header span {
+    color: #5c5e5d;
+    font-size: 14px;
+    font-family: Arial;
+    text-decoration: underline;
+    margin-left: 262px;
+    margin-top: 23px;
+    margin-bottom: 23px;
+    display: block;
+}
+
+.content li {
+    font-size: 14px;
+    color: #5c5e5d;
+    margin-left: 288px;
+    padding-top: 5px;
+}
+
+.content ul {
+    margin-bottom: 23px;
+    margin-top: 33px;
+}
+
+.contacts span {
+    margin-top: 23px;
+    margin-left: 300px;
+    margin-bottom: 26px;
+    display: block;
+    font-size: 14px;
+    color: #5c5e5d;
+}
+
+.contacts a {
+    color: #0056d3;
+    font-size: 14px;
+    margin-left: 300px;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.testimonial span {
+    display: block;
+    font-size: 14px;
+    color: #5c5e5d;
+    margin-left: 300px;
+    margin-top: 30px;
+}
